@@ -8,6 +8,8 @@ public class Ej01 {
 		temp.setCelsius(20);
 		System.out.println(temp.getFahrnheit());
 		System.out.println(temp.getKelvin());
+		
+		System.out.println(Ej01_temperatura.celsiusToFarenheit(20));
 
 	}
 

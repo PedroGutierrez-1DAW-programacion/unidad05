@@ -2,7 +2,14 @@ package ej02_ejerciciosIniciales;
 
 public class Ej01_temperatura {
 	private double temperatura = 0; // En ºC
-
+	
+	public static double celsiusToFarenheit(double grados){
+		return grados * 9/5.0 + 32.0;
+	}
+	public static double farenheitToCelsius(double grados){
+		return (grados - 32) * 5/9.0;
+	}
+	
 	public double getCelsius() {
 		return this.temperatura;
 	}
