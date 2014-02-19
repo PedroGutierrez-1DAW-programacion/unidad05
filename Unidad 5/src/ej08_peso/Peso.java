@@ -23,7 +23,7 @@ public class Peso {
 
 	public double getPeso(String unidad){ // Peso con dos decimales
 		return getPeso(unidad, 2);
-	}
+	}                             
 	
 	public double getPeso(String unidad, int decimales){ // Peso con los decimales establecidos
 		return redondeo(this.pesoKG * getPesoPorKilo(unidad), decimales);
