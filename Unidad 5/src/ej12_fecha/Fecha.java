@@ -64,5 +64,17 @@ public class Fecha
 	   
 	   if(this.mes == diasPorMes.length) this.mes = 1;   
    }
+
+	public int getMes() {
+		return mes;
+	}
+	
+	public int getDia() {
+		return dia;
+	}
+	
+	public int getAnio() {
+		return anio;
+	}
 } // fin de la clase Fecha
 
