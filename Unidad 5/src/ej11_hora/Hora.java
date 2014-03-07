@@ -53,5 +53,17 @@ public class Hora {
 		this.hora %= maxHora;
 	}
 	
+	public void tick(){
+		suma(new Hora(0,0,1));
+	}
+	
+	public void incrementarMinuto(){
+		suma(new Hora(0,1,0));
+	}
+	
+	public void incrementarHora(){
+		suma(new Hora(1,0,0));
+	}
+	
 
 }

@@ -16,7 +16,16 @@ public class Main {
 
 		horaVacia.suma(mihora);
 		horaVacia.suma(unahoraycuarto);
+
+		System.out.println(horaVacia.toString());
 		
+		horaVacia.tick();
+		System.out.println(horaVacia.toString());
+		
+		horaVacia.incrementarMinuto();
+		System.out.println(horaVacia.toString());
+
+		horaVacia.incrementarHora();
 		System.out.println(horaVacia.toString());
 	}
 
