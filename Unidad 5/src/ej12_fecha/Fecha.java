@@ -17,8 +17,7 @@ public class Fecha
       anio = elAnio; // pudo validar el año
       dia = comprobarDia( elDia ); // valida el día
 
-      System.out.printf( 
-         "[Constructor de objeto Fecha para la fecha %s]\n", this );
+      //System.out.printf("[Constructor de objeto Fecha para la fecha %s]\n", this );
    } // fin del constructor de Fecha
 
    // método utilitario para confirmar el valor apropiado del mes
