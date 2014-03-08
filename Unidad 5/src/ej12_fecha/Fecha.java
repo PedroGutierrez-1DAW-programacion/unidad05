@@ -75,5 +75,16 @@ public class Fecha
 	public int getAnio() {
 		return anio;
 	}
+	
+	public static Fecha nuevaFecha(int elMes, int elDia, int elAnio){
+		Fecha devolver;
+		try{
+			devolver = new Fecha(elMes, elDia, elAnio);
+		}catch(IllegalArgumentException e){
+			System.out.println("Fecha no válida: [" + e.getMessage() + "]");
+			return new Fecha(1,1,1970);
+		}
+		return devolver;
+	}
 } // fin de la clase Fecha
 
