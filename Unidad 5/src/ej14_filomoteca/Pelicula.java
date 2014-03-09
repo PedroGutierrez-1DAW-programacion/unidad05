@@ -33,11 +33,17 @@ public class Pelicula {
 	public void setActores(String[] actores) {
 		this.actores = actores;
 	}
+	public void setActores(int index, String actor) {
+		this.actores[index] = actor;
+	}
 	public String[] getDirectores() {
 		return directores;
 	}
 	public void setDirectores(String[] directores) {
 		this.directores = directores;
+	}
+	public void setDirectores(int index, String director) {
+		this.directores[index] = director;
 	}
 	public Fecha getEstreno() {
 		return estreno;
