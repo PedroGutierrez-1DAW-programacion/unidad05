@@ -12,55 +12,42 @@ public class Main {
 	 */
 
 	public static void main(String[] args) {
-		Filmoteca accion = new Filmoteca("Acción");
+		Filmoteca drama = new Filmoteca("Drama");
 		
-		accion = insetarPeliculasDePrueba(accion);
-
-		System.out.println(accion.toString());
-		System.out.println(accion.informacion(2));
-		accion.eliminar(1);
-		System.out.println(accion.toString());
-		System.out.println(accion.buscar("Paca"));
-		
-		accion.insertar();
-		
-		System.out.println(accion.toString());
-		System.out.println(accion.informacion(4));
+		drama.insertar(peliculasDePrueba());		
+		drama.acciones();	
 
 	}
 
-	private static Filmoteca insetarPeliculasDePrueba(Filmoteca filmoteca) {
-		filmoteca.insertar(new Pelicula(
-			"El saltamontes mecánico",
-			new String[]{"Carlos Guchurrea","Miguel Juanes","Alfonso Guerra"},
-			new String[]{"Manuel de la Fuente"},
-			Fecha.nuevaFecha(12, 17, 2010)));
-		
-		filmoteca.insertar(new Pelicula(
-			"La noche del ayer",
-			new String[]{"Miguel Juanes","Ramon de Cerbando"},
-			new String[]{"Carlos Azulez"},
-			Fecha.nuevaFecha(7, 3, 2011)));
-		
-		filmoteca.insertar(new Pelicula(
-			"El caso Paca",
-			new String[]{"Gimeno Suarez","Ramon de Cerbando","Carlos Guchurrea","Alfonso Guerra"},
-			new String[]{"Ramiro Castro"},
-			Fecha.nuevaFecha(2, 14, 2010)));
-		
-		filmoteca.insertar(new Pelicula(
-			"Nunca lo digas dos veces",
-			new String[]{"Ramon de Cerbando","Gimeno Suarez"},
-			new String[]{"Manuel de la Fuente"},
-			Fecha.nuevaFecha(9, 18, 2011)));
-		
-		filmoteca.insertar(new Pelicula(
-			"El caso Paca (Resurreción)",
-			new String[]{"Gimeno Suarez","Ramon de Cerbando","Alfonso Guerra"},
-			new String[]{"Ramiro Castro"},
-			Fecha.nuevaFecha(6, 29, 2012)));
-		
-		return filmoteca;
+	private static Pelicula[] peliculasDePrueba() {
+		return new Pelicula[]{
+			new Pelicula(
+				"El saltamontes mecánico",
+				new String[]{"Carlos Guchurrea","Miguel Juanes","Alfonso Guerra"},
+				new String[]{"Manuel de la Fuente"},
+				Fecha.nuevaFecha(12, 17, 2010)),
+			new Pelicula(
+				"La noche del ayer",
+				new String[]{"Miguel Juanes","Ramon de Cerbando"},
+				new String[]{"Carlos Azulez"},
+				Fecha.nuevaFecha(7, 3, 2011)),
+			new Pelicula(
+				"El caso Paca",
+				new String[]{"Gimeno Suarez","Ramon de Cerbando","Carlos Guchurrea","Alfonso Guerra"},
+				new String[]{"Ramiro Castro"},
+				Fecha.nuevaFecha(2, 14, 2010)),
+			new Pelicula(
+				"Nunca lo digas dos veces",
+				new String[]{"Ramon de Cerbando","Gimeno Suarez"},
+				new String[]{"Manuel de la Fuente"},
+				Fecha.nuevaFecha(9, 18, 2011)),
+			new Pelicula(
+				"El caso Paca (Resurreción)",
+				new String[]{"Gimeno Suarez","Ramon de Cerbando","Alfonso Guerra"},
+				new String[]{"Ramiro Castro"},
+				Fecha.nuevaFecha(6, 29, 2012))
+		};
+	
 	}
-
+	
 }
