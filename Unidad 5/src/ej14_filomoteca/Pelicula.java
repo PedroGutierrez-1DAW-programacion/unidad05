@@ -30,6 +30,9 @@ public class Pelicula {
 	public String[] getActores() {
 		return actores;
 	}
+	public String getActores(int index) {
+		return actores[index];
+	}
 	public void setActores(String[] actores) {
 		this.actores = actores;
 	}
@@ -38,6 +41,9 @@ public class Pelicula {
 	}
 	public String[] getDirectores() {
 		return directores;
+	}
+	public String getDirectores(int index) {
+		return directores[index];
 	}
 	public void setDirectores(String[] directores) {
 		this.directores = directores;
