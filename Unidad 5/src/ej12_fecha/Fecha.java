@@ -80,8 +80,8 @@ public class Fecha
 		Fecha devolver;
 		try{
 			devolver = new Fecha(elMes, elDia, elAnio);
-		}catch(IllegalArgumentException e){
-			System.out.println("Fecha no válida: [" + e.getMessage() + "]");
+		}catch(Exception e){
+			//System.out.println("Fecha no válida: [" + e.getMessage() + "]");
 			return new Fecha(1,1,1970);
 		}
 		return devolver;
